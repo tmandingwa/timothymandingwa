@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timothy | Data Science & ML Engineering</title>
+  <meta name="description" content="Portfolio of Timothy — Data Science & ML Engineering projects, experience, and contact." />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .company-line{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:8px;
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: -.01em;
+    }
+    .company-logo{
+      width:28px;
+      height:28px;
+      border-radius:999px;
+      object-fit:cover;
+      border:1px solid rgba(37,99,235,.18);
+      box-shadow: 0 10px 18px rgba(15,23,42,.06);
+      background: rgba(255,255,255,.85);
+      flex: 0 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="logo-dot"></span>
+        <span class="brand-name">Timothy</span>
+        <span class="brand-pill">MSBA • Emory University</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="btn btn-primary btn-cv" href="assets/Timothy_Mandingwa_Resume.pdf" download>Download CV</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-box hero-parallax" id="heroBox">
+          <div class="hero-orb orb-1" aria-hidden="true"></div>
+          <div class="hero-orb orb-2" aria-hidden="true"></div>
+          <div class="hero-gridlines" aria-hidden="true"></div>
+          <div class="hero-scan" aria-hidden="true"></div>
+
+          <div class="hero-grid">
+            <!-- LEFT -->
+            <div class="hero-left">
+              <div class="eyebrow reveal">
+                <span class="dot-live"></span>
+                DATA SCIENCE–POWERED AI AGENTS, GENAI & BI SYSTEMS
+              </div>
+
+              <h1 class="hero-title reveal">
+                <span class="hero-title-strong">
+                  <span id="rotatingHeadline" aria-live="polite"></span>
+                  <span id="typingCursor" aria-hidden="true">|</span>
+                </span>
+              </h1>
+
+              <p class="hero-subtitle reveal">
+                Data science-driven fraud analytics expert building BI dashboards, machine learning models, and Agentic GenAI systems enabling intelligent risk decisions.
+              </p>
+
+              <div class="hero-actions reveal">
+                <a class="btn btn-primary" href="#featured">View Portfolio</a>
+                <a class="btn btn-ghost" href="assets/Timothy_Mandingwa_Resume.pdf" download>Download CV</a>
+                <a class="btn btn-soft" href="#contact">Let’s talk</a>
+              </div>
+
+              <div class="stats reveal" aria-label="Key stats">
+                <div class="stat">
+                  <div class="stat-top">
+                    <span class="stat-ico">⏳</span>
+                    <span class="stat-kpi">6+ years</span>
+                  </div>
+                  <div class="stat-label">Applied analytics to real-world business problems</div>
+                </div>
+
+                <div class="stat">
+                  <div class="stat-top">
+                    <span class="stat-ico">🤖</span>
+                    <span class="stat-kpi">ML • Agents • AI</span>
+                  </div>
+                  <div class="stat-label">Developed ML pipelines & agent-based systems</div>
+                </div>
+
+                <div class="stat">
+                  <div class="stat-top">
+                    <span class="stat-ico">📊</span>
+                    <span class="stat-kpi">BI</span>
+                  </div>
+                  <div class="stat-label">Built KPI and risk monitoring dashboards</div>
+                </div>
+              </div>
+
+              <a class="scroll-hint scroll-bounce" href="#featured" aria-label="Scroll down">
+                <span class="scroll-dot" aria-hidden="true"></span>
+                Scroll
+                <span class="scroll-arrow" aria-hidden="true">↓</span>
+              </a>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero-right reveal">
+              <div class="profile-card">
+                <div class="profile-top">
+                  <div class="avatar">
+                    <img src="assets/headshot.jpg" alt="Timothy headshot" />
+                  </div>
+                  <div class="profile-meta">
+                    <div class="profile-name">Timothy Mandingwa</div>
+                    <div class="profile-role">Data Science • ML Engineering</div>
+                    <div class="profile-loc">Atlanta, GA • Open to opportunities</div>
+                  </div>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <div class="ai-card">
+                  <div class="ai-card-head">
+                    <div class="ai-pill">SQL</div>
+                    <div class="ai-pill">Python</div>
+                    <div class="ai-pill">R</div>
+                    <div class="ai-pill">Tableau • BI </div>
+                    <div class="ai-pill">AWS • GCP • Azure</div>
+                  </div>
+
+                  <div class="ai-viz" aria-hidden="true">
+                    <div class="ai-nodes">
+                      <span class="n n1"></span><span class="n n2"></span><span class="n n3"></span>
+                      <span class="n n4"></span><span class="n n5"></span><span class="n n6"></span>
+                      <span class="n n7"></span><span class="n n8"></span>
+                      <span class="l l1"></span><span class="l l2"></span><span class="l l3"></span>
+                      <span class="l l4"></span><span class="l l5"></span><span class="l l6"></span>
+                      <span class="l l7"></span>
+                    </div>
+                    <div class="ai-bars">
+                      <span style="height:30%"></span>
+                      <span style="height:64%"></span>
+                      <span style="height:50%"></span>
+                      <span style="height:78%"></span>
+                      <span style="height:58%"></span>
+                    </div>
+                  </div>
+
+                  <div class="ai-foot">
+                    <div class="mini-stat">
+                      <div class="mini-dot"></div>
+                      <div>
+                        <div class="mini-title">Live Insights</div>
+                        <div class="mini-sub">Dashboards • Models • Reports</div>
+                      </div>
+                    </div>
+                    <div class="mini-pill">Ready for hire</div>
+                  </div>
+                </div>
+
+                <div class="profile-actions">
+                  <a class="btn btn-small" href="#portfolio">Projects</a>
+                  <a class="btn btn-small btn-ghost" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /hero-grid -->
+        </div><!-- /hero-box -->
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section id="featured" class="section featured-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured Projects</h2>
+          <p>Quick highlights — the full portfolio is further below.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="project-card reveal">
+            <img src="assets/fraud.png" alt="Forex Trading Engine project preview" />
+            <div class="pc-body">
+              <h3>Fraud Analytics</h3>
+              <p>Built an interactive, agentic fraud analytics dashboard with GenAI to track KPIs, alert conversion, chargebacks, and loss trends for decision-making.</p>
+              <div class="pc-meta">
+                <span class="tag">ML</span><span class="tag">AI</span><span class="tag">SQL</span>
+              </div>
+              <div class="pc-actions">
+                <a class="btn btn-small" href="https://agentic-ml-fraud-detection-platform-production.up.railway.app/" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn btn-small btn-ghost" href="https://github.com/tmandingwa/agentic-ml-fraud-detection-platform" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/dq-validation.png" alt="Time Series Forecasting project preview" />
+            <div class="pc-body">
+              <h3>Real Estate Intelligence Model</h3>
+              <p>Built an end-to-end agentic platform ingesting property data, automating valuation with historical comps, and surfacing under-market opportunities.</p>
+              <div class="pc-meta">
+                <span class="tag">Forecasting</span><span class="tag">Pandas</span><span class="tag">Validation</span>
+              </div>
+              <div class="pc-actions">
+                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/forex.png" alt="Fraud Dashboard project preview" />
+            <div class="pc-body">
+              <h3>Trading Decision Engine</h3>
+              <p>Developed an ML-powered Stocks & FX trading engine combining predictive signals with rule-based risk controls and backtesting.</p>
+              <div class="pc-meta">
+                <span class="tag">Python</span><span class="tag">Machine Learning</span>
+              </div>
+              <div class="pc-actions">
+                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/mk.png" alt="Customer Segmentation project preview" />
+            <div class="pc-body">
+              <h3>Location-Aware AI Marketplace</h3>
+              <p>Built a production-ready WhatsApp bot using GenAI, semantic search, geolocation, and real-time user interactions.</p>
+              <div class="pc-meta">
+                <span class="tag">Clustering</span><span class="tag">EDA</span><span class="tag">Insights</span>
+              </div>
+              <div class="pc-actions">
+                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p>I design and deliver data science, BI, and AI-driven analytics products that turn complex data into actionable business decisions. 
+            My work spans fraud detection, agentic and GenAI-powered analytics, and enterprise dashboards used at scale to reduce losses, 
+            automate governance, and improve decision quality.</p>
+        </div>
+
+        <!-- ✅ CHANGED: add two-col-center so this single panel is centered -->
+        <div class="two-col two-col-center">
+          <div class="panel reveal panel-premium">
+            <h3>What I’ve built</h3>
+            <ul class="bullets bullets-clean">
+              <li>
+                <strong>Transaction Fraud Detection Systems</strong>
+                <p class="subtext">Hybrid rule + ML pipelines monitoring 20M+ daily transactions, reducing false positives and detecting fraud near real-time.</p>
+              </li>
+
+              <li>
+                <strong>Risk Scoring & Customer Segmentation Models</strong>
+                <p class="subtext">Unsupervised learning to cluster customers by risk profile and optimize limits, thresholds, and targeting strategies.</p>
+              </li>
+
+              <li>
+                <strong>Business Intelligence Dashboards</strong>
+                <p class="subtext">Power BI + Tableau dashboards for fraud KPIs, trend monitoring, chargebacks, and risk exposure.</p>
+              </li>
+
+              <li>
+                <strong>Agentic Analytics Pipelines</strong>
+                <p class="subtext">Agent-style workflows for ingestion, anomaly detection, validation, and governance reporting with minimal manual work.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+          <p>Highlights of roles, impact, and key projects.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="company-line">
+                <img class="company-logo" src="assets/equifax.jpg" alt="Equifax logo" />
+                <span>Equifax Financial Services</span>
+              </div>
+              <div class="t-top">
+                <h3>Data Science Consultant</h3>
+                <span class="t-time">2025 — Present</span>
+              </div>
+              <p>Built an automated data quality and stability validation system for regulated models at Equifax, with GenAI-driven documentation for Model Risk Management.</p>
+              <div class="t-tags">
+                <span class="tag">Fraud rules</span><span class="tag">SQL</span><span class="tag">Dashboards</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="company-line">
+                <img class="company-logo" src="assets/ewz.png" alt="Econet Wireless logo" />
+                <span>Econet Wireless</span>
+              </div>
+              <div class="t-top">
+                <h3>Fraud Data Analyst</h3>
+                <span class="t-time">2021 — 2025</span>
+              </div>
+              <p>Delivered analytics for operational decisions, investigations, and trend reporting across key business units.</p>
+              <div class="t-tags">
+                <span class="tag">Analytics</span><span class="tag">Reporting</span><span class="tag">ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="company-line">
+                <img class="company-logo" src="assets/ewz.png" alt="Econet Wireless logo" />
+                <span>Econet Wireless</span>
+              </div>
+              <div class="t-top">
+                <h3>IT Risk Analyst</h3>
+                <span class="t-time">2019 — 2021</span>
+              </div>
+              <p>Applied analytics, data validation, and automation to identify IT risks and support data-driven control decisions.</p>
+              <div class="t-tags">
+                <span class="tag">Risk Assessments</span><span class="tag">Control Assessments</span><span class="tag">IT Audit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="company-line">
+                <img class="company-logo" src="assets/kci.jpg" alt="KCI logo" />
+                <span>KCI Management Consultants</span>
+              </div>
+              <div class="t-top">
+                <h3>Data Science Intern</h3>
+                <span class="t-time">2017 — 2018</span>
+              </div>
+              <p>Built end-to-end analytics solutions, from data preparation and modeling to dashboards and automated reporting.</p>
+              <div class="t-tags">
+                <span class="tag">Power BI</span><span class="tag">Python</span><span class="tag">Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <p>Academic background and certifications.</p>
+        </div>
+
+        <div class="cards">
+          <article class="info-card reveal">
+            <h3>Master’s — Business Analytics</h3>
+            <p class="muted">Emory University - USA - 2026</p>
+            <p>Coursework: Completed advanced coursework in big data analytics, machine learning, statistical modeling, data visualization, prescriptive analytics, business intelligence, and an industry-based analytics practicum</p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Master’s — Big Data Analytics</h3>
+            <p class="muted">Chinhoyi University of Technology - Zimbabwe - 2023</p>
+            <p>Coursework: Completed advanced coursework in big data analytics, machine learning, data mining, data warehousing, statistical analysis, visualization, research methods, and an applied analytics dissertation.</p>
+          </article>
+        </div>
+
+        <br />
+
+        <div class="cards">
+          <article class="info-card reveal">
+            <h3>Bachelor of Business Studies and Computing Science</h3>
+            <p class="muted">University of Zimbabwe - 2019</p>
+            <p>Coursework: Completed coursework in programming, databases, software engineering, algorithms, networks, business analytics, accounting, finance, economics, statistics, and a final-year computing project.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Certifications</h3>
+            <p>Cloud / BI / ML / GenAI / Tableau / Power BI / ISO 27001.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Portfolio</h2>
+          <p>Selected projects. Add your GitHub links and live demos.</p>
+        </div>
+
+        <div class="filter-row reveal">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="ml">ML</button>
+          <button class="pill" data-filter="bi">BI</button>
+          <button class="pill" data-filter="data">Data</button>
+        </div>
+
+        <div class="grid" id="portfolioGrid">
+          <article class="tile reveal" data-type="ml">
+            <div class="tile-top">
+              <h3>Agentic Fraud Investigator</h3>
+              <span class="badge">ML</span>
+            </div>
+            <p>Case triage dashboard + signals for faster investigations.</p>
+            <div class="tile-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="tile reveal" data-type="data">
+            <div class="tile-top">
+              <h3>FX ML Research Pipeline</h3>
+              <span class="badge">Data</span>
+            </div>
+            <p>Walk-forward validation, costs/slippage, risk kill-switches.</p>
+            <div class="tile-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noopener">Write-up</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="tile reveal" data-type="bi">
+            <div class="tile-top">
+              <h3>Fraud KPI Dashboard</h3>
+              <span class="badge">BI</span>
+            </div>
+            <p>Fraud rate, false positives, approval rate, chargebacks.</p>
+            <div class="tile-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noopener">Report</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="tile reveal" data-type="ml">
+            <div class="tile-top">
+              <h3>Customer Segmentation</h3>
+              <span class="badge">ML</span>
+            </div>
+            <p>Clustering + profiles to drive targeting and retention.</p>
+            <div class="tile-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noopener">Notebook</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>Send a message, or reach me directly via email / LinkedIn.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel reveal panel-premium">
+            <h3>Quick links</h3>
+            <div class="contact-links">
+              <a class="link-row" href="mailto:timothy.mandingwa@emory.edu">
+                <span class="icon">✉</span> timothy.mandingwa@emory.edu
+              </a>
+              <a class="link-row" href="#" target="_blank" rel="noopener">
+                <span class="icon">in</span> LinkedIn
+              </a>
+              <a class="link-row" href="#" target="_blank" rel="noopener">
+                <span class="icon">GH</span> GitHub
+              </a>
+            </div>
+            <p class="muted small">Tip: Update these links in <code>index.html</code>.</p>
+          </div>
+
+          <form class="panel form reveal panel-premium" id="contactForm">
+            <div class="row">
+              <label>
+                Name
+                <input required name="name" type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input required name="email" type="email" placeholder="you@email.com" />
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea required name="message" rows="5" placeholder="Write your message..."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <span class="muted small" id="formHint">..</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Timothy Mandingwa.</p>
+      <a class="to-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
